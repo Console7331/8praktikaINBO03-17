@@ -1,0 +1,15 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+int main () {
+	char *yolo = new char;
+	cin >> yolo;
+	ofstream fout("first.txt");
+	fout << yolo;
+	fout.close();
+	delete yolo;
+	return -1;
+}
